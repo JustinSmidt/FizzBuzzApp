@@ -1,0 +1,52 @@
+﻿body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#f4f4f4;
+    margin:40px;
+
+}
+
+.container{
+    max-width:600px;
+    margin: 0 auto;
+    background-color:#fff;
+    padding:20px;
+    box-shadow: 0 0 10px rgb(0, 255, 144);
+}
+
+.result{
+    display:inline-block;
+    margin:8px;
+    padding:10px 20px;
+    border-radius:25px;
+    transition:transform 0.3s, box-shadow 0.3s;
+    width:8%;
+    /*height:50%;*/
+    text-align:center;
+    line-height:130%;
+}
+
+.result:hover{
+    transform:translateY(-3px);
+    box-shadow:0 5px 15px rgb(255, 0, 220);
+}
+
+.fizz {
+    background-color: rgb(0, 255, 144);
+    color: white;
+   
+   
+}
+
+.buzz {
+    background-color: rgb(255, 106, 0);
+    color: white;
+   
+  
+}
+
+.fizzbuzz {
+    background-color: rgb(255, 216, 0);
+    color: white;
+    
+    
+}

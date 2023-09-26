@@ -1,0 +1,41 @@
+﻿@model MultiplesOf3and5.Models.FizzBuzzModel
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>FizzBuzz Application</title>
+    </head>
+
+    <body>
+        <div>
+            @foreach(var item in Model.FizzBuzzResults)
+            {
+           <span class="result @GetcssClass(item)">@item</span>
+            }
+        </div>
+
+       @* Assigning css styles to different results*@
+    @functions{
+        private string GetcssClass(string item)
+        {
+            if(item == "Fizz")
+            {
+                return "fizz";
+            }
+            else if(item.StartsWith("Buzz"))
+            {
+                return "buzz";
+            }
+            else if(item == "FizzBuzz")
+            {
+                return "fizzbuzz";
+            }
+
+            return item;
+        }
+        }
+
+    </body>
+
+</html>
